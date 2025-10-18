@@ -9,13 +9,7 @@
     <title>Restaurant Menu</title>
 
 <style>
-    #menu{
-        
-    },
-
-    #order-form{
-
-    },
+   
 
     #header-img{
         border-color:pink ;
@@ -30,7 +24,8 @@
         padding: auto;
         background-color: rgb(255, 222, 241);
         text-align: center;
-
+        border:dotted;border-inline-color: rgb(255, 255, 255);
+        border-radius:60cm;
     }
 
 </style>
@@ -39,32 +34,32 @@
 
 </head>
 <body>
+
+
     <header>
         <h1>Pretty in Pink</h1>
-        <br>
 
 <img id="header-img"
-width="250"
-src="https://share.google/images/yuYwN5HoFJGoFTu09"
+src="/images.jpg"
 alt="Pink Restaurant Vibe"
->
+width="250"> 
+
 
 <nav>
-    <h2 id="#menu"></h2>
+    <ul> 
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order</a></li>
+    </ul>
+     
 </nav>
 
 
+</header>
 
-    
-
-<h2 id="#order-form"></h2>
-
-    </header>
-
-    <br>
 
     <main>
-        <section>
+
+        <section id="menu">
             <h2>Menu</h2>
 
             <article>
@@ -82,7 +77,7 @@ alt="Pink Restaurant Vibe"
 
             </article>
 
-            <br>
+            
 
             <article>
                 <h3>
@@ -98,8 +93,6 @@ Light sauce or no sauce you pick 🍕🩷 <br>
             </article>
 
 
-        <br>
-
 
 
             <article>
@@ -114,93 +107,98 @@ and ice cream just a bit of everything with flavors and toppings. <br>
 
         </section>
 
-        <br>
+        
 
-        <section>
+        <section id="order">
             <h2>Place Your Order</h2>
-            <form action="" method=""> 
-
-                <hr>
-
-pizza<input type="checkbox" >
-<ul> <!--Choose one example-->
-    <li>
-        pepporoni <input type="radio" name="option"> 
-        <li> How many pep pizzas? (max:5) <input type="number" step="0" max="5">
-    </li>
-    <br>
-    <li>
-        cheese <input type="radio" name="option">
-        <li> How many cheese pizzas? (max:5) <input type="number" step="0" max="5">
-    </li>
-    <br>
-    <li>
-        Combo , include Everything of toppings <input type="radio" name="option">
-        <li> How many Combo toppings? (max:5) <input type="number" step="0" max="5">
-    </li>
-</ul>
+            <form action="#" method="post"> 
 
 
+    <div class="form-group">
+<label>
+pizza<input type="checkbox" name="item" value="pizza" >
+</label> </div>
+    
+    <div class="form-group options">
+    <label>    pepporoni <input type="radio" name="option"> </label>
+    <label>      How many pep pizzas? (max:5) <input type="number" step="0" max="5"> </label>
+   
+    </div>
+    
+    <div class="form-group options">
+    <label>  cheese <input type="radio" name="option"> </label>
+        <label>     How many cheese pizzas? (max:5) <input type="number" step="0" max="5"> </label>
+</div>
+    
 
-<br>
-<hr>
-
-
-
-tacos<input type="checkbox">
-<br>
-<ul> <!--Choose only one option-->
-    <li> Asada <input type="radio" name="option">
-        <li> How many Asada tacos? (max:5) <input type="number" step="0" max="5">
-    </li>
-    <br>
-    <li>Pastor <input type="radio" name="option">
-        <li> How many pastor tacos? (max:5) <input type="number" step="0" max="5">
-            </li> <br>
-
-    <li> Chicken <input type="radio" name="option">
-        <li> How many chicken tacos? (max:5) <input type="number" step="0" max="5"></li>
-        <br>
-    <li> Combo of all Toppings <input type="radio" name="option"> 
-        <li> How many Combos ? (max:5) <input type="number" step="0" max="5"> </li>
-</ul>
-
-
+    <div class="form-group options">
+            <label>    Combo , include Everything of toppings <input type="radio" name="option"> </label>
+                <label>      How many Combo toppings? (max:5) <input type="number" step="0" max="5"> </label>
+   
+            </div>
 
 
 <hr>
 
 
+        <div class="form-group">
+        <label> Tacos:<input type="checkbox"> </label>
+        </div>
 
-Dessert <input type="checkbox">
-<ul>
-    <li>
-        Cake <input type="radio" name="option">
-        <li> How many Cakes? (max:5) <input type="number" step="0" max="5">
-    </li>
-    <br>
-    <li>
-        Ice cream <input type="radio" name="option">
-        <li> How many Ice creams? (max:5) <input type="number" step="0" max="5"> </li>
-    </li>
-    <br>
-    <li>
-        Candy <input type="radio" name="option">
-        <li> How many candies? (max:5) <input type="number" step="0" max="5"> </li>
-    </li>
-        </ul>
-            </form>
+   <div class="form-group options"> 
+   <label> Asada <input type="radio" name="option"> </label>
+ <label> How  many Asada tacos? (max:5) : <input type="number" step="0" max="5"> </label>
+   </div>
+    
+        <div class="form-group options">
+  <label> Pastor <input type="radio" name="option"> </label>
+<label>  How many pastor tacos? (max:5) <input type="number" step="0" max="5"> </label>
+    </div> 
 
-            <br>
-            <hr>
-            <br>
+        <div class="form-group options">
 
-            <form>
+      <label>  Chicken <input type="radio" name="option"> </label> 
+      <label>  How many chicken tacos? (max:5) <input type="number" step="0" max="5"> </label> 
+        </div> 
 
+            <div class="form-group options">
+       <label> Combo of all Toppings <input type="radio" name="option"> </label> 
+       <label>    How many Combos ? (max:5) <input type="number" step="0" max="5"> </label> 
+
+         </div>
+
+
+
+        <hr>
+
+
+        <div class="form-group">
+            <label>
+        Dessert <input type="checkbox"> </label>
+        </div>
+        <div class="form-group options">
+
+       <label>  Cake <input type="radio" name="option"> </label>
+        <label>  How many Cakes? (max:5) <input type="number" step="0" max="5"> </label>
+        </div>
+
+         <div class="form-group options">
+        <label>Ice cream <input type="radio" name="option"></label>
+        <label> How many Ice creams? (max:5) <input type="number" step="0" max="5"> </label>
+         </div>
+        <div class="form-group options">
+        <label>  Candy <input type="radio" name="option"></label>
+        <label>    How many candies? (max:5) <input type="number" step="0" max="5"> </label>
+        </div>
+    
+        <hr>
+
+        <div class="form-group">
                 <h3>Special Request?</h3>
-
+<label>
             <textarea rows="3" cols="45" placeholder="Ex: Light Sauce on pizza ?"></textarea>
-                <br>
+        </label>
+    </div>
 
             
                 <input type="submit" value="Go to Checkout! 🤙🏼">
@@ -211,9 +209,9 @@ Dessert <input type="checkbox">
 
     </main>
 
-    <br>
+  
     <hr>
-    <br>
+  
 <footer>
     <p>Made with Love by, Yuri 👩🏻‍💻  <br>
          <i>For Codedex.com project <br> Username : YuriCendejas</i> </p>
